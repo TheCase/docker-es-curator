@@ -1,0 +1,6 @@
+# curate-filebeat
+0 * * * * /usr/bin/curl -XDELETE http://elasticsearch.service/filebeat-$( date +%Y.%m.%d -d '5 days ago')
+
+#curate-logstash 
+0 * * * * /usr/bin/curl -XDELETE http://elasticsearch.service/logstash-$( date +%Y.%m.%d -d '5 days ago')
+
